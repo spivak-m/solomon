@@ -1,0 +1,75 @@
+.user-block
+	display: -webkit-flex
+	display: -moz-flex
+	display: -ms-flex
+	display: -o-flex
+	display: flex
+
+.user-block_item
+	min-width: 100px
+	height: 100px
+	padding-left: 20px
+	padding-right: 20px
+	border-right: 1px solid #dedede
+	display: -webkit-flex
+	display: -moz-flex
+	display: -ms-flex
+	display: -o-flex
+	display: flex
+	align-items: center
+	justify-content: center
+
+.user-block_tel
+	display: block
+	font-size: 1.25rem
+	line-height: 1
+	color: #3c3b27
+	font-family: "FuturaPT Demi", sans-serif
+	text-decoration: none
+	position: relative
+	padding-top: 18px
+	padding-left: 28px
+
+	&::before
+		content: "Телефон доставки"
+		font-size: .875rem
+		line-height: 1
+		color: #808080
+		font-family: "FuturaPT Book"
+		position: absolute
+		top: 0
+		left: 28px
+		pointer-events: none
+
+	.icon
+		position: absolute
+		bottom: 1px
+		left: 0
+		font-size: 1.125rem
+		color: #fe6610
+		pointer-events: none
+
+	a
+		text-decoration: none
+		color: inherit
+
+.user-block_btn
+	font-size: 2rem
+	text-decoration: none
+	color: #c4c4c4
+	display: -webkit-flex
+	display: -moz-flex
+	display: -ms-flex
+	display: -o-flex
+	display: flex
+	justify-content: center
+	align-items: center
+	width: 40px
+	height: 40px
+
+	.icon
+		font-size: inherit
+		color: inherit
+	
+	&:hover
+		opacity: .8

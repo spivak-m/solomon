@@ -1,0 +1,110 @@
+.cart-item
+	display: -webkit-flex
+	display: -moz-flex
+	display: -ms-flex
+	display: -o-flex
+	display: flex
+	align-items: center
+	padding: 20px
+	border-bottom: 1px solid #dedede
+	background-color: #fff
+
+	&:last-child
+		border-bottom-width: 0
+
+.cart-item_img
+	width: 140px
+	height: 140px
+	display: -webkit-flex
+	display: -moz-flex
+	display: -ms-flex
+	display: -o-flex
+	display: flex
+	justify-content: center
+	align-items: center
+	margin-right: 20px
+	flex-shrink: 0
+
+	img
+		width: initial
+		max-width: 100%
+		height: auto
+
+.cart-item_info
+	display: -webkit-flex
+	display: -moz-flex
+	display: -ms-flex
+	display: -o-flex
+	display: flex
+	flex-direction: column
+	width: 250px
+	flex-shrink: 0
+
+.cart-item_title
+	font-size: 1.25rem
+	line-height: 1
+	font-family: "FuturaPT Demi", sans-serif
+	color: #000
+	font-weight: 400
+
+.cart-item_params
+	font-size: .875rem
+	line-height: 1
+	color: #808080
+
+.cart-item_actions
+	display: -webkit-flex
+	display: -moz-flex
+	display: -ms-flex
+	display: -o-flex
+	display: flex
+	flex-grow: 1
+	justify-content: space-between
+	align-items: center
+
+.cart-item_price
+	display: -webkit-flex
+	display: -moz-flex
+	display: -ms-flex
+	display: -o-flex
+	display: flex
+	align-items: flex-end
+	font-size: 1.5rem
+	line-height: 1
+	color: #000
+
+.cart-item_price-num
+	font-family: "FuturaPT Demi", sans-serif
+	font-weight: 400
+	margin-right: 5px
+
+.cart-item_price-symbol
+	font-size: .8em
+	color: #808080
+
+.cart-item_del
+	display: block
+	width: 17px
+	height: 17px
+	position: relative
+	font-size: 0
+
+	&::before,
+	&::after
+		content: ""
+		width: 14px
+		height: 2px
+		background-color: #c4c4c4
+		position: absolute
+		top: 50%
+		left: 50%
+		margin-left: -6px
+	
+	&::before
+		transform: rotate(45deg)
+
+	&::after
+		transform: rotate(-45deg)
+
+	&:hover
+		opacity: .8

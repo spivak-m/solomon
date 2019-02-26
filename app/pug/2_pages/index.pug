@@ -1,0 +1,83 @@
+extends ../0_base/template
+
+block title
+	title Home page
+
+block vars
+	-isIndex = true;
+
+block content
+	.index-block
+		.l-wrapper
+			h2.index-block_title.like-h1 Ресторан доставки <br>японской кухни
+
+			.cards-layout
+				.cards-layout_item: +cardCategory("Большие роллы", "от 250 ₽ / 40 видов").__category
+				.cards-layout_item: +cardCategory("Сеты", "от 250 ₽ / 40 видов").__category
+				.cards-layout_item: +cardCategory("Запеченные роллы", "от 250 ₽ / 40 видов").__category
+				.cards-layout_item: +cardCategory("Пицца и тортилья", "от 250 ₽ / 40 видов").__category
+				.cards-layout_item: +cardCategory("Суши и сашими", "от 250 ₽ / 40 видов").__category
+				.cards-layout_item: +cardCategory("Салаты и супы", "от 250 ₽ / 40 видов").__category
+				.cards-layout_item: +cardCategory("Горячие блюда и закуски", "от 250 ₽ / 40 видов").__category
+				.cards-layout_item: +cardCategory("Десерты и напитки", "от 250 ₽ / 40 видов").__category
+
+	.index-block
+		.l-wrapper
+			h2.index-block_title.like-h1 Рекомендуем попробовать
+
+			.cards-layout
+				.cards-layout_item: +card(
+					"Сет «Весёлая компания»", 
+					"1 240 г / 40 шт", 
+					"Лосось, угорь, тобико, креветка, огурец, авакадо, снежный краб, сыр филадельфия, соус терияки, кунжут")
+				.cards-layout_item: +card(
+					"Сет «Ассорти»", 
+					"1 300 г / 50 шт", 
+					"Лосось, угорь, тобико, креветка, огурец, авакадо, снежный краб, сыр филадельфия, соус терияки, кунжут")
+				.cards-layout_item: +card(
+					"Сет «Оригами»", 
+					"855 г / 30 шт", 
+					"Лосось, угорь, тобико, креветка, огурец, авакадо, снежный краб, сыр филадельфия, соус терияки, кунжут")
+				.cards-layout_item: +card(
+					"Сет «Горячий»", 
+					"850 г / 30 шт", 
+					"Лосось, угорь, тобико, креветка, огурец, авакадо, снежный краб, сыр филадельфия, соус терияки, кунжут")
+
+	.index-block
+		.l-wrapper
+			h2.index-block_title.like-h1 Соломон это...
+
+			.cards-layout
+				.cards-layout_item: +feature("Вкусно", "cookie")
+				.cards-layout_item: +feature("Полезно", "plus-circle")
+				.cards-layout_item: +feature("Много", "bullseye")
+				.cards-layout_item: +feature("Доступно", "wallet")
+				.cards-layout_item: +feature("С кешбэком", "percent")
+				.cards-layout_item: +feature("Качественно", "feather")
+				.cards-layout_item: +feature("Быстро", "shipping-fast")
+				.cards-layout_item: +feature("С любовью", "heart-circle")
+	
+	.map
+		iframe(src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d16246.378816926677!2d56.78087274166224!3d59.40309337590959!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1z0YHQvtC70L7QvNC-0L0g0LHQtdGA0LXQt9C90LjQutC4!5e0!3m2!1sru!2sru!4v1547189331070" width="600" height="450" frameborder="0" style="border:0" allowfullscreen)
+
+		.l-wrapper.map_wrapper
+			.map_container
+				h2.map_title.like-h2 Контакты
+
+				ul.map_info
+					li.map_info-item
+						.map_info-item-ic: +icon("map-marker-alt")
+						span г. Березники, ул. Свободы 40. <br>Корпус №3, офис 9
+					li.map_info-item
+						.map_info-item-ic: +icon("phone")
+						a(href="#") +7 (3424) 200-555
+					li.map_info-item
+						.map_info-item-ic: +icon("at")
+						a(href="#") info@solomon.ru
+					li.map_info-item
+						.map_info-item-ic: +icon("clock")
+						ul.map_info-timetable
+							li Вс - Чт: 09:30 – 23:00
+							li Пт - Сб: 10:00 – 24:00
+
+				a(href="#").btn Заказать звонок

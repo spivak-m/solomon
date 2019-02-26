@@ -1,0 +1,64 @@
+.cabinet-menu
+	list-style: none
+	padding: 0
+	margin: 0
+	background-color: #fff
+	color: #808080
+	border-radius: 10px
+	overflow: hidden
+	font-size: 1.125rem
+
+.cabinet-menu_item
+	border: 1px solid
+	border-bottom-width: 0
+	border-color: #dedede
+
+	&:first-child
+		border-radius: 10px 10px 0 0
+
+	&:last-child
+		border-radius: 0 0 10px 10px
+		border-bottom-width: 1px
+
+	&.__is-active
+		background-color: #fe6610
+		color: #fff
+		font-family: "FuturaPT Demi", sans-serif
+
+		.cabinet-menu_link
+			pointer-events: none
+
+.cabinet-menu_link
+	display: -webkit-flex
+	display: -moz-flex
+	display: -ms-flex
+	display: -o-flex
+	display: flex
+	align-items: center
+	min-height: 102px
+	padding: 15px 20px
+	color: inherit
+	text-decoration: none
+
+	&:hover
+		opacity: .8
+
+.cabinet-menu_item-ic
+	width: 62px
+	height: 62px
+	margin-right: 10px
+	display: -webkit-flex
+	display: -moz-flex
+	display: -ms-flex
+	display: -o-flex
+	display: flex
+	align-items: center
+	justify-content: center
+	font-size: 1.875rem
+	color: inherit
+		
+	.icon
+		font-size: inherit
+
+		&-sign-out
+			font-size: 1.45rem

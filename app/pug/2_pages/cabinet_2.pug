@@ -1,0 +1,66 @@
+extends ../0_base/template
+
+block title
+	title Home page
+
+block content
+	.l-wrapper
+		h1.page-title.like-h1 Личный кабинет
+		.cabinet
+			.cabinet_menu
+				ul.cabinet-menu
+					li.cabinet-menu_item: a(href="cabinet_1.html").cabinet-menu_link
+						.cabinet-menu_item-ic: +icon("user-circle")
+						|Личная информация
+					li.cabinet-menu_item.__is-active: a(href="cabinet_2.html").cabinet-menu_link
+						.cabinet-menu_item-ic: +icon("history")
+						|История заказов
+					li.cabinet-menu_item: a(href="#").cabinet-menu_link
+						.cabinet-menu_item-ic: +icon("sign-out")
+						|Выход
+
+			.cabinet_content
+				.orders
+					.orders_header
+						.orders_cell: span Заказ
+						.orders_cell: span Статус
+						.orders_cell: span Сумма 
+					.orders_items
+						.orders_item
+							.orders_cell
+								span.orders_item-no № 45684
+								time(datetime="2018-06-12").orders_item-date 12.06.2018
+							.orders_cell
+								.orders_item-status
+									.orders_item-status-ic: +icon("clock-thin")
+									span В процессе
+							.orders_cell
+								b.orders_item-price 1 245 <span class="orders_item-price-symbol">₽</span>
+							.orders_cell.orders_item-actions
+								a(href="#").btn.__ghost.__small Детали заказа
+
+						.orders_item
+							.orders_cell
+								span.orders_item-no № 45684
+								time(datetime="2018-06-12").orders_item-date 12.06.2018
+							.orders_cell
+								.orders_item-status
+									.orders_item-status-ic: +icon("check-circle")
+									span Исполнен
+							.orders_cell
+								b.orders_item-price 1 245 <span class="orders_item-price-symbol">₽</span>
+							.orders_cell.orders_item-actions
+								a(href="#").btn.__ghost.__small Детали заказа
+
+						.orders_item
+							.orders_cell
+								span.orders_item-no № 45684
+								time(datetime="2018-06-12").orders_item-date 12.06.2018
+							.orders_cell
+								.orders_item-status
+									.orders_item-status-ic: +icon("times-circle")
+									span Отменён
+							.orders_cell
+								b.orders_item-price 1 245 <span class="orders_item-price-symbol">₽</span>
+							.orders_cell.orders_item-actions
+								a(href="#").btn.__ghost.__small Детали заказа

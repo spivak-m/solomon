@@ -1,0 +1,32 @@
+extends ../0_base/template
+
+block title
+	title Home page
+
+block content
+	.l-wrapper
+		h1.page-title.like-h1 Личный кабинет
+		.cabinet
+			.cabinet_menu
+				ul.cabinet-menu
+					li.cabinet-menu_item.__is-active: a(href="cabinet_1.html").cabinet-menu_link
+						.cabinet-menu_item-ic: +icon("user-circle")
+						|Личная информация
+					li.cabinet-menu_item: a(href="cabinet_2.html").cabinet-menu_link
+						.cabinet-menu_item-ic: +icon("history")
+						|История заказов
+					li.cabinet-menu_item: a(href="#").cabinet-menu_link
+						.cabinet-menu_item-ic: +icon("sign-out")
+						|Выход
+
+			.cabinet_content
+				form(action="#" method="post").form
+					fieldset.form_fieldset
+						legend.form_fieldset-title Личная информация
+						.form_field-wrapper: input(type="text" name="name" placeholder="Имя").form_text-field
+						.form_field-wrapper: input(type="tel" name="tel" placeholder="Телефон").form_text-field
+						.form_field-wrapper: input(type="email" name="email" placeholder="Электронная почта").form_text-field
+						.form_field-wrapper: input(type="password" name="pass" placeholder="Пароль").form_text-field
+
+					.form_actions
+						button(type="submit").btn Сохранить изменения

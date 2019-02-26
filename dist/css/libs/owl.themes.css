@@ -1,0 +1,101 @@
+.owl-feedback-theme{
+	position: relative;
+	width: calc(100% - 80px);
+	margin-right: auto;
+	margin-left: auto;
+}
+.owl-feedback-theme .owl-stage{
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+}
+.owl-feedback-theme .owl-nav {
+	margin: 0;
+	height: 0;
+	position: static;
+}
+.owl-feedback-theme .owl-nav [class*=owl-] {
+	position: absolute;
+	top: 50%;
+	width: 15px;
+	height: 60px;
+	margin: 0;
+	margin-top: -30px;
+	background-color: transparent;
+	outline: none;
+}
+.owl-feedback-theme .owl-nav [class*=owl-]:hover{
+	background-color: transparent;
+}
+.owl-feedback-theme .owl-nav [class*=owl-] span {
+	display: none !important;
+}
+.owl-feedback-theme .owl-nav [class*=owl-]::before,
+.owl-feedback-theme .owl-nav [class*=owl-]::after {
+	content: "";
+	display: block;
+	width: 12px;
+	height: 2px;
+	background-color: #c2c3c7;
+	position: absolute;
+	top: 50%;
+}
+.owl-feedback-theme .owl-nav [class*=owl-]:hover::before,
+.owl-feedback-theme .owl-nav [class*=owl-]:hover::after {
+	background-color: #5b5e69;
+}
+.owl-feedback-theme .owl-nav .owl-prev {
+	left: -40px;
+}
+.owl-feedback-theme .owl-nav .owl-next {
+	right: -40px;
+}
+.owl-feedback-theme .owl-nav .owl-prev::before {
+	transform: rotate(-45deg);
+	left: 0;
+	margin-top: -4px;
+}
+.owl-feedback-theme .owl-nav .owl-prev::after {
+	transform: rotate(45deg);
+	left: 0;
+	margin-top: 4px;
+}
+.owl-feedback-theme .owl-nav .owl-next::before {
+	transform: rotate(45deg);
+	right: 0;
+	margin-top: -4px;
+}
+.owl-feedback-theme .owl-nav .owl-next::after {
+	transform: rotate(-45deg);
+	right: 0;
+	margin-top: 4px;
+}
+
+/* BANNER THEME */
+
+.owl-banner-theme .owl-dots{
+	position: absolute;
+	bottom: 20px;
+	left: 50%;
+	transform: translateX(-50%);
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+}
+.owl-banner-theme button.owl-dot{
+	width: 10px;
+	height: 10px;
+	background-color: rgba(50, 54, 67, 0.1);
+	border-radius: 50%;
+	margin-right: 10px;
+}
+.owl-banner-theme button.owl-dot:last-child{
+	margin-right: 0;
+}
+.owl-banner-theme button.owl-dot.active{
+	background-color: #fff;
+}

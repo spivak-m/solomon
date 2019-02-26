@@ -1,0 +1,8 @@
+mixin cardCategory(name, prop)
+	a(href="catalog.html").card&attributes(attributes)
+		.card_img
+			img(src="media/img-p/set.jpg", alt="")
+				
+		.card_info
+			b.card_title #{name}
+			span.card_prop #{prop}

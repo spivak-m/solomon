@@ -1,0 +1,44 @@
+.spinner
+	display: -webkit-flex
+	display: -moz-flex
+	display: -ms-flex
+	display: -o-flex
+	display: flex
+	color: #3c3b27
+	font-size: 1.125rem
+	line-height: 1
+
+.spinner_btn
+	background-color: transparent
+	border: none
+	padding: 5px 7px
+	position: relative
+	font-size: 0
+	cursor: pointer
+	outline: none
+
+	&::before,
+	&::after
+		content: ""
+		width: 8px
+		height: 1px
+		background-color: #808080
+		position: absolute
+		top: 50%
+		left: 50%
+		margin-left: -4px
+
+	&.__dec::after
+		display: none
+
+	&.__inc::after
+		transform: rotate(90deg)
+
+	&.__is-disabled
+		opacity: .6
+
+.spinner_vp
+	width: 30px
+	text-align: center
+	background-color: transparent
+	border: none

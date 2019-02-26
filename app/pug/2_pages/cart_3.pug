@@ -1,0 +1,174 @@
+extends ../0_base/template
+
+block title
+	title Home page
+
+block content
+	.l-wrapper
+		h1.page-title.like-h1 Оформление заказа
+		.cart
+			.cart_content
+				.cart-section.__is-succsess
+					.cart-section_header
+						.cart-section_label 01.
+						b.cart-section_title Список товаров
+						span.cart-section_subtitle.
+							Проверьте содержимое своей корзины и нажмите продолжить, чтобы 
+							перейти к следующему пункту оформления заказа
+					.cart-section_content
+						.cart-item
+							.cart-item_img
+								img(src="media/img-p/set.jpg", alt="")
+							.cart-item_info
+								b.cart-item_title Сет «Ассорти»
+								span.cart-item_params 1 240 г / 40 шт
+							.cart-item_actions
+								.spinner.js-spinner
+									button(type="button").spinner_btn.__dec -
+									input(type="text" value="1" disabled).spinner_vp
+									button(type="button").spinner_btn.__inc +
+
+								.cart-item_price
+									span.cart-item_price-num 240 
+									span.cart-item_price-symbol ₽
+
+								a(href="#").cart-item_del D
+
+						.cart-item
+							.cart-item_img
+								img(src="media/img-p/set.jpg", alt="")
+							.cart-item_info
+								b.cart-item_title Сет «Ассорти»
+								span.cart-item_params 1 240 г / 40 шт
+							.cart-item_actions
+								.spinner.js-spinner
+									button(type="button").spinner_btn.__dec -
+									input(type="text" value="1" disabled).spinner_vp
+									button(type="button").spinner_btn.__inc +
+
+								.cart-item_price
+									span.cart-item_price-num 240 
+									span.cart-item_price-symbol ₽
+
+								a(href="#").cart-item_del D
+
+						.cart-item
+							.cart-item_img
+								img(src="media/img-p/set.jpg", alt="")
+							.cart-item_info
+								b.cart-item_title Сет «Ассорти»
+								span.cart-item_params 1 240 г / 40 шт
+							.cart-item_actions
+								.spinner.js-spinner
+									button(type="button").spinner_btn.__dec -
+									input(type="text" value="1" disabled).spinner_vp
+									button(type="button").spinner_btn.__inc +
+
+								.cart-item_price
+									span.cart-item_price-num 240 
+									span.cart-item_price-symbol ₽
+
+								a(href="#").cart-item_del D
+
+					.cart-section_actions
+						a(href="#").btn.__ghost Есть промокод?
+						a(href="cart_2.html").btn Продолжить
+
+				.cart-section.__is-succsess
+					.cart-section_header
+						.cart-section_label 02.
+						b.cart-section_title Данные получателя
+						span.cart-section_subtitle.
+							Укажите контактную информацию для получения заказа
+					.cart-section_content
+						form(action="#" method="post").form
+							fieldset.form_fieldset
+								legend.form_fieldset-title Контактная информация
+								.form_field-wrapper: input(type="text" name="name" placeholder="Имя").form_text-field
+								.form_field-wrapper: input(type="tel" name="tel" placeholder="Номер телефона").form_text-field
+
+							fieldset.form_fieldset
+								legend.form_fieldset-title Доставка
+								.form_field-wrapper: input(type="text" name="street" placeholder="Улица").form_text-field
+								.form_field-wrapper.__2-fields
+									input(type="text" name="house" placeholder="Дом").form_text-field
+									input(type="text" name="flat" placeholder="Квартира").form_text-field
+
+							fieldset.form_fieldset
+								legend.form_fieldset-title Оплата
+								.form_radio-wrapper
+									input(type="radio" name="payment" value="offline" id="offline-payment" checked).form_radio
+									label(for="offline-payment").form_radio-label Наличными курьеру
+								.form_radio-wrapper
+									input(type="radio" name="payment" value="online" id="online-payment").form_radio
+									label(for="online-payment").form_radio-label Оплата на сайте
+
+					.cart-section_actions
+						a(href="cart_1.html").btn.__ghost Назад
+						a(href="cart_3.html").btn Оформить заказ
+
+				.cart-section
+					.cart-section_header
+						.cart-section_label 03.
+						b.cart-section_title Заказ оформлен
+						span.cart-section_subtitle.
+							После выполнения всех пунктов, мы получим ваш заказ и начнем его приготовление
+					.cart-section_content.__text-content
+						b Ваш заказ №1234 оформлен
+
+						p Спасибо за заказ. 
+						p В ближайшее время с вами свяжется наш оператор для подтверждения. <br>Прямо сейчас наши повара получили ваш заказ. 
+						p Желаем приятного аппетита!
+					
+					.cart-section_actions
+						a(href="catalog.html").btn Вернуться к покупкам
+
+			.cart_aside
+				.checkout
+					b.checkout_title Детали заказа
+
+					ul.checkout_items
+						li.checkout_item
+							.checkout_item-img
+								img(src="media/img-p/set.jpg", alt="")
+							.checkout_item-info
+								span.checkout_item-title Сет «Ассорти»
+								span.checkout_item-params 1 240 г / 40 шт
+							.checkout_item-price
+								b.checkout_item-price-num 1 250
+								span.checkout_item-price-symbol ₽
+						li.checkout_item
+							.checkout_item-img
+								img(src="media/img-p/set.jpg", alt="")
+							.checkout_item-info
+								span.checkout_item-title Сет «Ассорти»
+								span.checkout_item-params 1 240 г / 40 шт
+							.checkout_item-price
+								b.checkout_item-price-num 1 250
+								span.checkout_item-price-symbol ₽
+						li.checkout_item
+							.checkout_item-img
+								img(src="media/img-p/set.jpg", alt="")
+							.checkout_item-info
+								span.checkout_item-title Сет «Ассорти»
+								span.checkout_item-params 1 240 г / 40 шт
+							.checkout_item-price
+								b.checkout_item-price-num 1 250
+								span.checkout_item-price-symbol ₽
+
+					ul.checkout_totals
+						li.checkout_totals-item
+							span.checkout_totals-name Товары (4)
+							span.checkout_totals-val 2 639 ₽
+						li.checkout_totals-item
+							span.checkout_totals-name Скидка
+							span.checkout_totals-val 125 ₽
+						li.checkout_totals-item
+							span.checkout_totals-name Итоговая сумма
+							span.checkout_totals-val 2 514 ₽
+						li.checkout_totals-item
+							span.checkout_totals-name Доставка
+							span.checkout_totals-val бесплатно
+						li.checkout_totals-item
+							span.checkout_totals-name Оплата
+							span.checkout_totals-val наличными

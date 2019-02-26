@@ -1,0 +1,124 @@
+.checkout
+	width: 100%
+	display: -webkit-flex
+	display: -moz-flex
+	display: -ms-flex
+	display: -o-flex
+	display: flex
+	flex-direction: column
+	background-color: #fff
+	padding: 20px
+	border-radius: 10px
+	border: 1px solid #dedede
+	font-size: 1.125rem
+
+.checkout_title
+	font-size: 1.25rem
+	line-height: 1
+	font-family: "FuturaPT Demi"
+	font-weight: 400
+	margin-bottom: 20px
+
+.checkout_totals
+	list-style: none
+	padding: 0
+	margin: 0
+	color: #3c3b27
+
+.checkout_totals-item
+	display: -webkit-flex
+	display: -moz-flex
+	display: -ms-flex
+	display: -o-flex
+	display: flex
+	align-items: flex-start
+	line-height: 1
+	justify-content: space-between
+	margin-bottom: 6px
+
+.checkout_totals-name
+	margin-right: auto
+	color: #808080
+
+.checkout_items
+	list-style: none
+	margin: 0 0 20px
+	padding: 0 0 20px
+	position: relative
+	
+	&::after
+		content: ""
+		display: block
+		position: absolute
+		bottom: 0
+		left: 0
+		right: 0
+		height: 1px
+		background-color: #dedede
+		margin-right: -20px
+		margin-left: -20px
+
+.checkout_item
+	width: 100%
+	display: -webkit-flex
+	display: -moz-flex
+	display: -ms-flex
+	display: -o-flex
+	display: flex
+	align-items: center
+	margin-bottom: 20px
+
+	&:last-child
+		margin-bottom: 0
+
+.checkout_item-img
+	width: 70px
+	height: 70px
+	display: -webkit-flex
+	display: -moz-flex
+	display: -ms-flex
+	display: -o-flex
+	display: flex
+	justify-content: center
+	align-items: center
+	overflow: hidden
+	margin-right: 10px
+
+.checkout_item-info
+	display: -webkit-flex
+	display: -moz-flex
+	display: -ms-flex
+	display: -o-flex
+	display: flex
+	flex-direction: column
+	flex-grow: 1
+
+.checkout_item-title
+	font-size: 1.125rem
+	line-height: 1
+	color: #3c3b27
+	margin-bottom: 6px
+
+.checkout_item-params
+	font-size: .875rem
+	line-height: 1
+	color: #808080
+
+.checkout_item-price
+	display: -webkit-flex
+	display: -moz-flex
+	display: -ms-flex
+	display: -o-flex
+	display: flex
+	align-items: flex-end
+	color: #3c3b27
+	font-size: 1.25rem
+	line-height: 1
+
+.checkout_item-price-num
+	font-family: "FuturaPT Demi", sans-serif
+	font-weight: 400
+	padding-right: 5px
+
+.checkout_item-price-symbol
+	font-size: .8em

@@ -1,0 +1,1596 @@
+@charset "UTF-8";
+@font-face {
+  font-family: "FuturaPT Book";
+  src: url("../media/fonts/FuturaPT-Book.eot"), url("../media/fonts/FuturaPT-Book.ttf"), url("../media/fonts/FuturaPT-Book.woff");
+  font-weight: 400; }
+
+@font-face {
+  font-family: "FuturaPT Demi";
+  src: url("../media/fonts/FuturaPT-Demi.eot"), url("../media/fonts/FuturaPT-Demi.ttf"), url("../media/fonts/FuturaPT-Demi.woff");
+  font-weight: 700; }
+
+.icon {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  fill: currentColor; }
+
+.icon-at {
+  font-size: 1.6rem;
+  width: 1em; }
+
+.icon-bullseye {
+  font-size: 4.8rem;
+  width: 1em; }
+
+.icon-check-circle {
+  font-size: 1.6rem;
+  width: 1em; }
+
+.icon-clock {
+  font-size: 1.6rem;
+  width: 1em; }
+
+.icon-clock-thin {
+  font-size: 1.6rem;
+  width: 1.125em; }
+
+.icon-cookie {
+  font-size: 4.8rem;
+  width: 1.02083em; }
+
+.icon-feather {
+  font-size: 4.8rem;
+  width: 1.02083em; }
+
+.icon-heart-circle {
+  font-size: 4.8rem;
+  width: 1em; }
+
+.icon-history {
+  font-size: 3rem;
+  width: 1em; }
+
+.icon-map-marker-alt {
+  font-size: 1.7rem;
+  width: 0.70588em; }
+
+.icon-percent {
+  font-size: 4.2rem;
+  width: 0.88095em; }
+
+.icon-phone {
+  font-size: 1.9rem;
+  width: 1em; }
+
+.icon-plus-circle {
+  font-size: 4.8rem;
+  width: 1em; }
+
+.icon-shipping-fast {
+  font-size: 4.8rem;
+  width: 1.27083em; }
+
+.icon-shopping-basket {
+  font-size: 2.8rem;
+  width: 1.28571em; }
+
+.icon-sign-out {
+  font-size: 2.3rem;
+  width: 1.30435em; }
+
+.icon-times-circle {
+  font-size: 1.6rem;
+  width: 1em; }
+
+.icon-user-circle {
+  font-size: 3.2rem;
+  width: 0.96875em; }
+
+.icon-wallet {
+  font-size: 4.2rem;
+  width: 1.16667em; }
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'FuturaPT Book', sans-serif;
+  font-size: 16px;
+  line-height: 1.4; }
+
+img {
+  width: 100%;
+  height: auto; }
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit; }
+
+a {
+  color: #1771f1;
+  font-size: inherit;
+  line-height: inherit;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none; }
+
+h1,
+.like-h1 {
+  font-size: 3.25rem;
+  font-family: "FuturaPT Demi", sans-serif;
+  color: #3c3b27; }
+
+h2,
+.like-h2 {
+  font-size: 2rem;
+  font-family: "FuturaPT Demi", sans-serif;
+  color: #3c3b27; }
+
+h3,
+.like-h3 {
+  font-size: 1.5rem;
+  font-family: "FuturaPT Demi", sans-serif;
+  color: #000; }
+
+.l-wrapper {
+  max-width: 1220px;
+  min-width: 1220px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 10px;
+  padding-right: 10px;
+  background-color: transparent; }
+
+.page-content {
+  padding-top: 80px;
+  background: #f7f7f7 url(../media/img/bg.jpeg) repeat 0 0;
+  background-size: 65%; }
+  .page-content.__is-index {
+    background-image: url(../media/img/index-pattern.png), url(../media/img/bg.jpeg);
+    background-repeat: repeat-x, repeat;
+    background-position: 0 57px, 0 0;
+    background-size: 100%, 65%; }
+
+.page-title {
+  display: block;
+  margin: 0 auto 40px;
+  text-align: center; }
+
+.site-header {
+  border-bottom: 1px solid #dedede; }
+
+.site-header_wrapper {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  position: relative;
+  min-height: 100px;
+  align-items: center; }
+
+.site-header_logo {
+  width: 150px;
+  height: 80px;
+  text-decoration: none;
+  line-height: 0;
+  font-size: 0;
+  position: absolute;
+  top: 10px;
+  left: 50%;
+  margin-left: -75px; }
+
+.site-header_l-side,
+.site-header_r-side {
+  width: calc( 50% - (190px / 2)); }
+
+.site-header_l-side {
+  padding-right: 20px;
+  margin-right: auto; }
+
+.site-header_r-side {
+  padding-left: 20px;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  justify-content: flex-end; }
+
+.site-foo {
+  background-color: #333333;
+  color: #c4c4c4; }
+
+.site-foo_first {
+  position: relative;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 50px;
+  padding-bottom: 35px; }
+  .site-foo_first::before {
+    content: "";
+    position: absolute;
+    bottom: -1px;
+    left: 10px;
+    right: 10px;
+    height: 1px;
+    background-color: #5b5b5b; }
+
+.site-foo_logo {
+  width: 280px;
+  height: 120px;
+  background-color: #444;
+  margin-bottom: 20px; }
+
+.site-foo_about {
+  width: 280px;
+  margin-right: 20px; }
+
+.site-foo_nav {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex; }
+
+.site-foo_nav-list {
+  max-width: 230px;
+  list-style: none;
+  margin: 0;
+  margin-right: 90px;
+  padding: 0; }
+  .site-foo_nav-list:last-child {
+    margin-right: 0; }
+
+.site-foo_nav-title {
+  font-size: 1.125rem;
+  font-family: "FuturaPT Demi", sans-serif;
+  color: #fff;
+  margin-bottom: 20px; }
+
+.site-foo_nav-item {
+  margin-bottom: 7px; }
+
+.site-foo_nav-link {
+  color: inherit;
+  text-decoration: none; }
+  .site-foo_nav-link:hover {
+    color: #fff; }
+
+.site-foo_info {
+  list-style: none;
+  margin: 0;
+  margin-left: 20px;
+  padding: 0;
+  width: 225px; }
+
+.site-foo_info-item {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 10px; }
+  .site-foo_info-item:last-child {
+    margin-bottom: 0; }
+  .site-foo_info-item a {
+    color: inherit;
+    text-decoration: none; }
+
+.site-foo_info-item-ic {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  justify-content: center;
+  width: 16px;
+  font-size: 16px;
+  color: #fff;
+  margin-right: 12px;
+  align-items: flex-start;
+  margin-top: 5px; }
+  .site-foo_info-item-ic .icon {
+    font-size: inherit; }
+
+.site-foo_info-timetable {
+  list-style: none;
+  margin: 0;
+  padding: 0; }
+
+.site-foo_second {
+  padding-top: 29px;
+  padding-bottom: 29px;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  align-items: center;
+  font-size: .875rem;
+  line-height: 1;
+  justify-content: space-between;
+  color: #808080; }
+
+.site-foo_site-developer a {
+  color: inherit;
+  font-weight: 500; }
+
+.site-nav_list {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-size: 1.125rem;
+  line-height: 1;
+  color: #3c3b27; }
+
+.site-nav_item {
+  margin-right: 20px; }
+  .site-nav_item:last-child {
+    margin-right: 0; }
+
+.site-nav_link {
+  color: inherit;
+  text-decoration: none;
+  line-height: inherit; }
+  .site-nav_link:hover {
+    opacity: .8; }
+
+.user-block {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex; }
+
+.user-block_item {
+  min-width: 100px;
+  height: 100px;
+  padding-left: 20px;
+  padding-right: 20px;
+  border-right: 1px solid #dedede;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+
+.user-block_tel {
+  display: block;
+  font-size: 1.25rem;
+  line-height: 1;
+  color: #3c3b27;
+  font-family: "FuturaPT Demi", sans-serif;
+  text-decoration: none;
+  position: relative;
+  padding-top: 18px;
+  padding-left: 28px; }
+  .user-block_tel::before {
+    content: "Телефон доставки";
+    font-size: .875rem;
+    line-height: 1;
+    color: #808080;
+    font-family: "FuturaPT Book";
+    position: absolute;
+    top: 0;
+    left: 28px;
+    pointer-events: none; }
+  .user-block_tel .icon {
+    position: absolute;
+    bottom: 1px;
+    left: 0;
+    font-size: 1.125rem;
+    color: #fe6610;
+    pointer-events: none; }
+  .user-block_tel a {
+    text-decoration: none;
+    color: inherit; }
+
+.user-block_btn {
+  font-size: 2rem;
+  text-decoration: none;
+  color: #c4c4c4;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px; }
+  .user-block_btn .icon {
+    font-size: inherit;
+    color: inherit; }
+  .user-block_btn:hover {
+    opacity: .8; }
+
+.cards-layout {
+  width: 100%;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch; }
+
+.cards-layout_item {
+  width: calc( (100% / 4) - (60px / 4));
+  margin-right: 20px;
+  margin-top: 20px; }
+  .cards-layout_item:nth-child(4n+4) {
+    margin-right: 0; }
+  .cards-layout_item:nth-child(-n+4) {
+    margin-top: 0; }
+  .cards-layout_item .card {
+    height: 100%; }
+
+.index-block {
+  margin-bottom: 40px; }
+
+.index-block_title {
+  margin: 0 0 40px;
+  text-align: center;
+  display: block;
+  line-height: 1.2; }
+
+.btn {
+  display: inline-flex;
+  vertical-align: top;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  padding: 10px 40px;
+  font-size: 1rem;
+  color: #fff;
+  background-color: #fe6610;
+  border-radius: 25px;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  text-decoration: none;
+  font-family: "FuturaPT Demi", sans-serif; }
+  .btn.__ghost {
+    background-color: #fff;
+    color: #fe6610;
+    border: 2px solid #fe6610; }
+  .btn.__small {
+    height: 40px;
+    font-size: .875rem;
+    padding-left: 25px;
+    padding-right: 25px; }
+  .btn:hover {
+    opacity: .8; }
+
+.map {
+  min-height: 440px;
+  position: relative; }
+  .map iframe {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%; }
+  .map .btn {
+    width: 100%; }
+
+.map_wrapper {
+  min-height: 440px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex; }
+
+.map_container {
+  width: 390px;
+  min-height: 100%;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.25);
+  padding: 40px;
+  position: relative;
+  z-index: 2; }
+
+.map_title {
+  margin: 0 0 20px;
+  text-align: center; }
+
+.map_info {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 20px;
+  color: #3c3b27; }
+
+.map_info-item {
+  margin-bottom: 10px;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  align-items: flex-start; }
+  .map_info-item:last-child {
+    margin-bottom: 0; }
+  .map_info-item a {
+    color: inherit;
+    text-decoration: none; }
+
+.map_info-item-ic {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  font-size: 1rem;
+  color: #fe6610;
+  margin-right: 12px;
+  width: 16px;
+  height: 22px;
+  margin-top: 2px; }
+  .map_info-item-ic .icon {
+    font-size: inherit; }
+
+.map_info-timetable {
+  list-style: none;
+  padding: 0;
+  margin: 0; }
+
+.card {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: #fff;
+  color: #3c3b27;
+  border: 1px solid #dedede;
+  transition: background .2s;
+  position: relative;
+  cursor: pointer; }
+  .card:not(.__category):hover {
+    background: #fe6610 url(../media/img/card-pattern.png) repeat 0 0;
+    color: #fff; }
+    .card:not(.__category):hover .card_img {
+      visibility: hidden;
+      opacity: 0; }
+    .card:not(.__category):hover .card_content {
+      position: absolute;
+      top: 20px;
+      bottom: 20px;
+      left: 20px;
+      right: 20px; }
+    .card:not(.__category):hover .card_prop {
+      color: #f7f7f7; }
+    .card:not(.__category):hover .card_text {
+      opacity: 1;
+      visibility: visible;
+      padding-top: 20px;
+      color: #f7f7f7; }
+    .card:not(.__category):hover .card_cart-btn {
+      color: #fff; }
+  .card.__category {
+    text-decoration: none; }
+    .card.__category .card_img {
+      height: 180px; }
+
+.card_img {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 300px;
+  height: 220px;
+  overflow: hidden;
+  margin: 0 auto 20px;
+  opacity: 1;
+  transition: .1s; }
+
+.card_content {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  flex-direction: column;
+  margin-top: auto; }
+
+.card_info {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1; }
+
+.card_title {
+  font-size: 1.125rem;
+  line-height: 1;
+  font-family: "FuturaPT Demi";
+  color: inherit;
+  margin-bottom: 5px;
+  transition: 0; }
+
+.card_prop {
+  font-size: .875rem;
+  color: #808080;
+  line-height: 1; }
+
+.card_text {
+  margin: 0;
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity .2s; }
+
+.card_foo {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding-top: 15px;
+  flex-shrink: 0; }
+
+.card_price {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  align-items: flex-end;
+  color: inherit;
+  line-height: 1;
+  margin-right: auto; }
+
+.card_price-count {
+  font-size: 1.5rem;
+  margin-right: 4px; }
+
+.card_price-symbol {
+  font-size: 1.125rem; }
+
+.card_cart-btn {
+  display: block;
+  text-decoration: none;
+  color: #fe6610; }
+  .card_cart-btn .icon {
+    font-size: 1.5rem;
+    color: inherit; }
+  .card_cart-btn:hover {
+    opacity: .8; }
+
+.feature {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 20px 16px;
+  background-color: #fff;
+  border: 1px solid #dedede;
+  border-radius: 10px;
+  color: #808080; }
+
+.feature_icon {
+  width: 100px;
+  height: 100px;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+  color: #fe6610;
+  font-size: 3rem; }
+  .feature_icon .icon {
+    color: inherit;
+    font-size: inherit; }
+
+.feature_title {
+  font-family: "FuturaPT Demi", sans-serif;
+  font-size: 1.25rem;
+  color: #3c3b27;
+  margin-bottom: 4px; }
+
+.feature_text {
+  font-size: .937rem; }
+
+.catalog_header {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  align-items: center;
+  margin-bottom: 40px; }
+
+.catalog_title {
+  margin: 0 auto 0 0; }
+
+.catalog_sorting {
+  width: 235px; }
+
+.catalog_content {
+  padding-bottom: 100px; }
+
+.form {
+  padding: 20px; }
+  .form.__no-pdg {
+    padding: 0; }
+
+.form_fieldset {
+  border: none;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  max-width: 410px; }
+  .form_fieldset + .form_fieldset {
+    margin-top: 30px; }
+
+.form_fieldset-title {
+  font-family: "FuturaPT Demi", sans-serif;
+  font-size: 1.125rem;
+  line-height: 1;
+  color: #3c3b27;
+  margin-bottom: 20px; }
+
+.form_field-wrapper {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  width: 100%; }
+  .form_field-wrapper + .form_field-wrapper {
+    margin-top: 20px; }
+  .form_field-wrapper.__2-fields .form_text-field {
+    width: calc(50% - 10px);
+    margin-right: 20px; }
+    .form_field-wrapper.__2-fields .form_text-field:last-child {
+      margin-right: 0; }
+
+.form_text-field {
+  height: 50px;
+  border: 2px solid #dedede;
+  border-radius: 25px;
+  padding: 10px 20px;
+  width: 100%;
+  outline: none; }
+
+.form_actions {
+  padding-top: 30px;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  align-items: center; }
+  .form_actions.__align-center {
+    justify-content: center; }
+
+.form_select {
+  width: 100%;
+  line-height: 1;
+  color: #808080;
+  background-color: #fff;
+  border: 1px solid #dedede;
+  border-radius: 25px;
+  position: relative; }
+  .form_select.__is-open {
+    border-radius: 25px 25px 0 0; }
+    .form_select.__is-open .form_select-current::before {
+      transform: rotate(-135deg);
+      margin-top: 0; }
+    .form_select.__is-open .form_select-list {
+      transform: scaleY(1);
+      visibility: visible; }
+
+.form_select-current {
+  padding-left: 20px;
+  padding-right: 25px;
+  position: relative;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  align-items: center;
+  height: 50px;
+  width: 100%;
+  cursor: pointer; }
+  .form_select-current::before {
+    content: "";
+    display: block;
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    top: 50%;
+    margin-top: -7px;
+    right: 20px;
+    border-right: 1px solid #323643;
+    border-bottom: 1px solid #323643;
+    transform: rotate(45deg); }
+
+.form_select-list {
+  list-style: none;
+  margin: 0;
+  padding: 10px 0 0;
+  position: absolute;
+  top: 40px;
+  left: 0;
+  right: 0;
+  margin-right: -1px;
+  margin-left: -1px;
+  background-color: #fff;
+  border: 1px solid #dedede;
+  border-top: none;
+  border-radius: 0 0 25px 25px;
+  transform: scaleY(0);
+  transform-origin: 0 0;
+  visibility: hidden;
+  transition: transform .2s;
+  overflow: hidden;
+  z-index: 5; }
+
+.form_select-val {
+  width: 100%;
+  cursor: pointer;
+  padding: 10px 20px; }
+  .form_select-val:last-child {
+    margin-bottom: 0; }
+  .form_select-val:hover {
+    background-color: #f9f9f9; }
+
+.form_radio-wrapper + .form_radio-wrapper {
+  margin-top: 10px; }
+
+.form_radio {
+  display: none; }
+  .form_radio:checked ~ .form_radio-label {
+    pointer-events: none; }
+    .form_radio:checked ~ .form_radio-label::before {
+      background-color: #fe6610;
+      border-color: #fe6610; }
+
+.form_radio-label {
+  line-height: 1;
+  color: #3c3b27;
+  padding-left: 30px;
+  position: relative;
+  cursor: pointer; }
+  .form_radio-label::before {
+    content: "";
+    display: block;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 1px;
+    left: 0;
+    border: 2px solid #c4c4c4;
+    border-radius: 50%;
+    background-clip: content-box;
+    padding: 3px; }
+
+.text-block {
+  width: 590px;
+  margin: 0 auto;
+  color: #3c3b27;
+  font-size: 1.25rem;
+  padding-bottom: 100px; }
+  .text-block h1 {
+    margin: 0 0 40px; }
+  .text-block h2 {
+    margin: 40px 0 20px; }
+  .text-block p {
+    margin: 0 0 20px; }
+  .text-block p + p {
+    margin-top: 20px; }
+  .text-block a {
+    color: #fe6610; }
+  .text-block b {
+    font-family: "FuturaPT Demi", sans-serif;
+    font-weight: 400; }
+  .text-block ul {
+    list-style: none;
+    padding: 0;
+    margin: 0; }
+    .text-block ul li {
+      position: relative;
+      padding-left: 46px;
+      padding-bottom: 6px; }
+      .text-block ul li::before {
+        content: "";
+        width: 14px;
+        height: 1px;
+        background-color: #fe6610;
+        position: absolute;
+        top: 16px;
+        left: 20px; }
+
+.cabinet {
+  width: 100%;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  align-items: flex-start;
+  padding-bottom: 100px; }
+
+.cabinet_menu {
+  width: calc(100% / 3 - 10px);
+  margin-right: 20px; }
+
+.cabinet_content {
+  width: calc(100% / 3 * 2);
+  border-radius: 10px;
+  border: 1px solid #dedede;
+  background-color: #fff; }
+
+.cabinet-menu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  background-color: #fff;
+  color: #808080;
+  border-radius: 10px;
+  overflow: hidden;
+  font-size: 1.125rem; }
+
+.cabinet-menu_item {
+  border: 1px solid;
+  border-bottom-width: 0;
+  border-color: #dedede; }
+  .cabinet-menu_item:first-child {
+    border-radius: 10px 10px 0 0; }
+  .cabinet-menu_item:last-child {
+    border-radius: 0 0 10px 10px;
+    border-bottom-width: 1px; }
+  .cabinet-menu_item.__is-active {
+    background-color: #fe6610;
+    color: #fff;
+    font-family: "FuturaPT Demi", sans-serif; }
+    .cabinet-menu_item.__is-active .cabinet-menu_link {
+      pointer-events: none; }
+
+.cabinet-menu_link {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  align-items: center;
+  min-height: 102px;
+  padding: 15px 20px;
+  color: inherit;
+  text-decoration: none; }
+  .cabinet-menu_link:hover {
+    opacity: .8; }
+
+.cabinet-menu_item-ic {
+  width: 62px;
+  height: 62px;
+  margin-right: 10px;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.875rem;
+  color: inherit; }
+  .cabinet-menu_item-ic .icon {
+    font-size: inherit; }
+    .cabinet-menu_item-ic .icon-sign-out {
+      font-size: 1.45rem; }
+
+.orders {
+  border-radius: 10px;
+  overflow: hidden;
+  background-color: #fff; }
+
+.orders_header {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  align-items: center;
+  background-color: #f3f3f3;
+  border-bottom: 1px solid #dedede;
+  padding: 20px;
+  color: #808080; }
+
+.orders_cell {
+  width: 25%; }
+
+.orders_item {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  border-bottom: 1px solid #dedede;
+  color: #3c3b27; }
+  .orders_item:last-child {
+    border-bottom-width: 0; }
+
+.orders_item-no {
+  display: block; }
+
+.orders_item-date {
+  font-size: .875rem;
+  color: #808080; }
+
+.orders_item-status {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  align-items: center; }
+
+.orders_item-status-ic {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 18px;
+  height: 18px;
+  font-size: 1rem;
+  margin-right: 7px;
+  color: #808080; }
+  .orders_item-status-ic .icon {
+    font-size: inherit;
+    color: inherit; }
+
+.orders_item-price {
+  font-size: 1.125rem;
+  font-family: "FuturaPT Demi", sans-serif;
+  font-weight: 400; }
+
+.orders_item-price-symbol {
+  font-size: .9em;
+  font-family: "FuturaPT Book", sans-serif; }
+
+.orders_item-actions {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  justify-content: flex-end; }
+
+.cart {
+  width: 100%;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  align-items: flex-start;
+  padding-bottom: 100px;
+  background-color: transparent; }
+
+.cart_content {
+  flex-grow: 1;
+  min-height: 600px; }
+
+.cart_aside {
+  flex-shrink: 0;
+  width: calc(100% / 3 - 10px);
+  margin-left: 20px;
+  position: sticky;
+  top: 20px; }
+
+.cart-section {
+  width: 100%;
+  border: 1px solid #dedede;
+  border-radius: 10px;
+  overflow: hidden;
+  background-color: #fff;
+  margin-bottom: 20px; }
+  .cart-section:last-child {
+    margin-bottom: 0; }
+  .cart-section.__is-disabled .cart-section_header {
+    border-bottom-width: 0;
+    background-color: #fbfbfb;
+    color: #808080; }
+  .cart-section.__is-disabled .cart-section_label {
+    background-color: transparent;
+    border: 2px solid #dedede;
+    color: #c4c4c4; }
+  .cart-section.__is-disabled .cart-section_subtitle {
+    color: #c4c4c4; }
+  .cart-section.__is-disabled .cart-section_content,
+  .cart-section.__is-disabled .cart-section_actions {
+    display: none; }
+  .cart-section.__is-succsess .cart-section_header {
+    border-bottom-width: 0;
+    background-color: #fbfbfb;
+    color: #808080;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    align-items: center; }
+  .cart-section.__is-succsess .cart-section_label {
+    background-color: #27ae60;
+    font-size: 0; }
+    .cart-section.__is-succsess .cart-section_label::before {
+      content: "";
+      width: 10px;
+      height: 21px;
+      border-right: 3px solid #fff;
+      border-bottom: 3px solid #fff;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      margin-top: -13px;
+      margin-left: -4px;
+      transform: rotate(45deg); }
+  .cart-section.__is-succsess .cart-section_title {
+    margin-bottom: 0; }
+  .cart-section.__is-succsess .cart-section_subtitle {
+    display: none; }
+  .cart-section.__is-succsess .cart-section_content,
+  .cart-section.__is-succsess .cart-section_actions {
+    display: none; }
+
+.cart-section_header {
+  padding: 20px 200px 20px 100px;
+  position: relative;
+  border-bottom: 1px solid #dedede;
+  color: #3c3b27;
+  min-height: 100px; }
+
+.cart-section_label {
+  position: absolute;
+  left: 20px;
+  width: 62px;
+  height: 62px;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.562rem;
+  line-height: 1;
+  color: #fff;
+  background-color: #fe6610;
+  border-radius: 50%; }
+
+.cart-section_title {
+  font-size: 1.25rem;
+  line-height: 1;
+  display: block;
+  font-family: "FuturaPT Demi", sans-serif;
+  margin-bottom: 6px;
+  font-weight: 400; }
+
+.cart-section_subtitle {
+  color: #808080;
+  line-height: 1.2; }
+
+.cart-section_content {
+  background-color: #fff; }
+  .cart-section_content.__text-content {
+    padding: 20px; }
+    .cart-section_content.__text-content b {
+      display: block;
+      font-family: "FuturaPT Demi", sans-serif;
+      font-weight: 400;
+      color: #3c3b27;
+      line-height: 1;
+      margin-bottom: 10px; }
+    .cart-section_content.__text-content p {
+      color: #808080;
+      margin: 0;
+      margin-bottom: 10px; }
+      .cart-section_content.__text-content p:last-child {
+        margin-bottom: 0; }
+
+.cart-section_actions {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  padding: 20px;
+  background-color: #fbfbfb;
+  border-top: 1px solid #dedede; }
+  .cart-section_actions .btn:last-child {
+    margin-left: auto; }
+
+.checkout {
+  width: 100%;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  border: 1px solid #dedede;
+  font-size: 1.125rem; }
+
+.checkout_title {
+  font-size: 1.25rem;
+  line-height: 1;
+  font-family: "FuturaPT Demi";
+  font-weight: 400;
+  margin-bottom: 20px; }
+
+.checkout_totals {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  color: #3c3b27; }
+
+.checkout_totals-item {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  align-items: flex-start;
+  line-height: 1;
+  justify-content: space-between;
+  margin-bottom: 6px; }
+
+.checkout_totals-name {
+  margin-right: auto;
+  color: #808080; }
+
+.checkout_items {
+  list-style: none;
+  margin: 0 0 20px;
+  padding: 0 0 20px;
+  position: relative; }
+  .checkout_items::after {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background-color: #dedede;
+    margin-right: -20px;
+    margin-left: -20px; }
+
+.checkout_item {
+  width: 100%;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px; }
+  .checkout_item:last-child {
+    margin-bottom: 0; }
+
+.checkout_item-img {
+  width: 70px;
+  height: 70px;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  margin-right: 10px; }
+
+.checkout_item-info {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1; }
+
+.checkout_item-title {
+  font-size: 1.125rem;
+  line-height: 1;
+  color: #3c3b27;
+  margin-bottom: 6px; }
+
+.checkout_item-params {
+  font-size: .875rem;
+  line-height: 1;
+  color: #808080; }
+
+.checkout_item-price {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  align-items: flex-end;
+  color: #3c3b27;
+  font-size: 1.25rem;
+  line-height: 1; }
+
+.checkout_item-price-num {
+  font-family: "FuturaPT Demi", sans-serif;
+  font-weight: 400;
+  padding-right: 5px; }
+
+.checkout_item-price-symbol {
+  font-size: .8em; }
+
+.cart-item {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  border-bottom: 1px solid #dedede;
+  background-color: #fff; }
+  .cart-item:last-child {
+    border-bottom-width: 0; }
+
+.cart-item_img {
+  width: 140px;
+  height: 140px;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 20px;
+  flex-shrink: 0; }
+  .cart-item_img img {
+    width: initial;
+    max-width: 100%;
+    height: auto; }
+
+.cart-item_info {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  flex-direction: column;
+  width: 250px;
+  flex-shrink: 0; }
+
+.cart-item_title {
+  font-size: 1.25rem;
+  line-height: 1;
+  font-family: "FuturaPT Demi", sans-serif;
+  color: #000;
+  font-weight: 400; }
+
+.cart-item_params {
+  font-size: .875rem;
+  line-height: 1;
+  color: #808080; }
+
+.cart-item_actions {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  flex-grow: 1;
+  justify-content: space-between;
+  align-items: center; }
+
+.cart-item_price {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  align-items: flex-end;
+  font-size: 1.5rem;
+  line-height: 1;
+  color: #000; }
+
+.cart-item_price-num {
+  font-family: "FuturaPT Demi", sans-serif;
+  font-weight: 400;
+  margin-right: 5px; }
+
+.cart-item_price-symbol {
+  font-size: .8em;
+  color: #808080; }
+
+.cart-item_del {
+  display: block;
+  width: 17px;
+  height: 17px;
+  position: relative;
+  font-size: 0; }
+  .cart-item_del::before, .cart-item_del::after {
+    content: "";
+    width: 14px;
+    height: 2px;
+    background-color: #c4c4c4;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -6px; }
+  .cart-item_del::before {
+    transform: rotate(45deg); }
+  .cart-item_del::after {
+    transform: rotate(-45deg); }
+  .cart-item_del:hover {
+    opacity: .8; }
+
+.spinner {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  color: #3c3b27;
+  font-size: 1.125rem;
+  line-height: 1; }
+
+.spinner_btn {
+  background-color: transparent;
+  border: none;
+  padding: 5px 7px;
+  position: relative;
+  font-size: 0;
+  cursor: pointer;
+  outline: none; }
+  .spinner_btn::before, .spinner_btn::after {
+    content: "";
+    width: 8px;
+    height: 1px;
+    background-color: #808080;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -4px; }
+  .spinner_btn.__dec::after {
+    display: none; }
+  .spinner_btn.__inc::after {
+    transform: rotate(90deg); }
+  .spinner_btn.__is-disabled {
+    opacity: .6; }
+
+.spinner_vp {
+  width: 30px;
+  text-align: center;
+  background-color: transparent;
+  border: none; }
+
+.modal {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding-top: 100px;
+  z-index: 997;
+  background-color: rgba(51, 51, 51, 0.8);
+  display: none; }
+
+.modal_overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 998; }
+
+.modal_container {
+  margin: 0 auto;
+  max-width: 90%;
+  width: 480px;
+  max-height: calc(100% - 15px);
+  background-color: #fff;
+  border: 1px solid #dedede;
+  border-radius: 10px;
+  position: relative;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  flex-direction: column;
+  z-index: 999;
+  box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.25); }
+
+.modal_content {
+  overflow-y: auto;
+  padding: 20px;
+  flex: 1 1 100%;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  flex-direction: column; }
+
+.modal_close {
+  display: block;
+  width: 23px;
+  height: 23px;
+  position: absolute;
+  top: 20px;
+  right: 20px; }
+  .modal_close::before, .modal_close::after {
+    content: "";
+    display: block;
+    width: 16px;
+    height: 3px;
+    background-color: #808080;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -2px;
+    margin-left: -8px; }
+  .modal_close::before {
+    transform: rotate(45deg); }
+  .modal_close::after {
+    transform: rotate(-45deg); }
+
+.modal_title {
+  margin: 0 0 20px; }
+
+.modal_text {
+  color: #808080;
+  margin: 0 0 20px; }

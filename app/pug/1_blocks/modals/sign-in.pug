@@ -1,0 +1,22 @@
+.modal
+	.modal_container#sign-in
+		.modal_content
+			h2.modal_title.like-h2 Авторизация
+
+			p.modal_text.
+				Введите номер и мы отправим вам код для входа в личный кабинет. 
+				Это позволит быстрее оформлять заказы и просматривать их 
+				историю.
+
+			form(action="#" method="post").form.__no-pdg
+				.form_field-wrapper
+					input(type="tel" name="tel" id="order-call-tel" placeholder="Телефон").form_text-field
+				.form_field-wrapper
+					input(type="text" name="pass" id="order-call-pass" placeholder="Код из SMS").form_text-field
+
+				.form_actions.__align-center
+					button(type="submit").btn Вход
+
+		a(href="#").modal_close
+
+	.modal_overlay

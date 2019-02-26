@@ -1,0 +1,143 @@
+.card
+	display: -webkit-flex
+	display: -moz-flex
+	display: -ms-flex
+	display: -o-flex
+	display: flex
+	flex-direction: column
+	align-items: flex-start
+	padding: 20px
+	border-radius: 10px
+	background-color: #fff
+	color: #3c3b27
+	border: 1px solid #dedede
+	transition: background .2s
+	position: relative
+	cursor: pointer
+	
+	&:not(.__category):hover
+		background: #fe6610 url(../media/img/card-pattern.png) repeat 0 0
+		color: #fff
+
+		.card_img
+			visibility: hidden
+			opacity: 0
+		
+		.card_content
+			position: absolute
+			top: 20px
+			bottom: 20px
+			left: 20px
+			right: 20px
+		
+		.card_prop
+			color: #f7f7f7
+
+		.card_text
+			opacity: 1
+			visibility: visible
+			padding-top: 20px
+			color: #f7f7f7
+
+		.card_cart-btn
+			color: #fff
+
+	&.__category
+		text-decoration: none
+
+		.card_img
+			height: 180px
+
+.card_img
+	display: -webkit-flex
+	display: -moz-flex
+	display: -ms-flex
+	display: -o-flex
+	display: flex
+	align-items: center
+	justify-content: center
+	width: 100%
+	max-width: 300px
+	height: 220px
+	overflow: hidden
+	margin: 0 auto 20px
+	opacity: 1
+	transition: .1s
+
+.card_content
+	display: -webkit-flex
+	display: -moz-flex
+	display: -ms-flex
+	display: -o-flex
+	display: flex
+	flex-direction: column
+	margin-top: auto
+
+.card_info
+	display: -webkit-flex
+	display: -moz-flex
+	display: -ms-flex
+	display: -o-flex
+	display: flex
+	flex-direction: column
+	flex-grow: 1
+
+.card_title
+	font-size: 1.125rem
+	line-height: 1
+	font-family: "FuturaPT Demi"
+	color: inherit
+	margin-bottom: 5px
+	transition: 0
+
+.card_prop
+	font-size: .875rem
+	color: #808080
+	line-height: 1
+
+.card_text
+	margin: 0
+	visibility: hidden
+	opacity: 0
+	transition: opacity .2s
+
+.card_foo
+	display: -webkit-flex
+	display: -moz-flex
+	display: -ms-flex
+	display: -o-flex
+	display: flex
+	align-items: center
+	width: 100%
+	padding-top: 15px
+	flex-shrink: 0
+
+.card_price
+	display: -webkit-flex
+	display: -moz-flex
+	display: -ms-flex
+	display: -o-flex
+	display: flex
+	align-items: flex-end
+	color: inherit
+	line-height: 1
+	margin-right: auto
+
+.card_price-count
+	font-size: 1.5rem
+	margin-right: 4px
+
+.card_price-symbol
+	font-size: 1.125rem
+
+.card_cart-btn
+	display: block
+	text-decoration: none
+	color: #fe6610
+
+	.icon
+		font-size: 1.5rem
+		color: inherit
+	
+	&:hover
+		opacity: .8

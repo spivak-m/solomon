@@ -1,0 +1,19 @@
+header.site-header
+	.l-wrapper.site-header_wrapper
+		.site-header_l-side
+			include site-nav
+
+		a(href="#").site-header_logo
+			img(src="media/img/logo.png", alt="")
+
+		.site-header_r-side
+			.user-block
+				.user-block_item
+					.user-block_tel
+						+icon("phone")
+						a(href="#") +7 (3424) 200-555
+				.user-block_item
+					a(href="#sign-in").user-block_btn.mopen: +icon("user-circle")
+				.user-block_item
+					a(href="cart_1.html").user-block_btn: +icon("shopping-basket")
+			

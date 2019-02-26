@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8"/>
+    <title>Home page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <link rel="stylesheet" href="css/normalize.css"/>
+    <link rel="stylesheet" href="css/styles.css"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="l-wrapper site-header_wrapper">
+        <div class="site-header_l-side">
+          <nav class="site-nav">
+            <ul class="site-nav_list">
+              <li class="site-nav_item"><a class="site-nav_link" href="/">Главная</a></li>
+              <li class="site-nav_item"><a class="site-nav_link" href="catalog.html">Меню</a></li>
+              <li class="site-nav_item"><a class="site-nav_link" href="text.html">Акции</a></li>
+              <li class="site-nav_item"><a class="site-nav_link" href="text.html">Доставка</a></li>
+              <li class="site-nav_item"><a class="site-nav_link" href="text.html">Контакты</a></li>
+            </ul>
+          </nav>
+        </div><a class="site-header_logo" href="#"><img src="media/img/logo.png" alt=""/></a>
+        <div class="site-header_r-side">
+          <div class="user-block">
+            <div class="user-block_item">
+              <div class="user-block_tel">
+                  <svg class="icon icon-phone ">
+                    <use xlink:href="media/img/sprite.svg#phone"></use>
+                  </svg><a href="#">+7 (3424) 200-555</a>
+              </div>
+            </div>
+            <div class="user-block_item"><a class="user-block_btn mopen" href="#sign-in">
+                  <svg class="icon icon-user-circle ">
+                    <use xlink:href="media/img/sprite.svg#user-circle"></use>
+                  </svg></a></div>
+            <div class="user-block_item"><a class="user-block_btn" href="cart_1.html">
+                  <svg class="icon icon-shopping-basket ">
+                    <use xlink:href="media/img/sprite.svg#shopping-basket"></use>
+                  </svg></a></div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main class="page-content">
+      <div class="l-wrapper">
+        <h1 class="page-title like-h1">Оформление заказа</h1>
+        <div class="cart">
+          <div class="cart_content">
+            <div class="cart-section">
+              <div class="cart-section_header">
+                <div class="cart-section_label">01.</div><b class="cart-section_title">Список товаров</b><span class="cart-section_subtitle">
+                  Проверьте содержимое своей корзины и нажмите продолжить, чтобы 
+                  перейти к следующему пункту оформления заказа</span>
+              </div>
+              <div class="cart-section_content">
+                <div class="cart-item">
+                  <div class="cart-item_img"><img src="media/img-p/set.jpg" alt=""/></div>
+                  <div class="cart-item_info"><b class="cart-item_title">Сет «Ассорти»</b><span class="cart-item_params">1 240 г / 40 шт</span></div>
+                  <div class="cart-item_actions">
+                    <div class="spinner js-spinner">
+                      <button class="spinner_btn __dec" type="button">-</button>
+                      <input class="spinner_vp" type="text" value="1" disabled="disabled"/>
+                      <button class="spinner_btn __inc" type="button">+</button>
+                    </div>
+                    <div class="cart-item_price"><span class="cart-item_price-num">240 </span><span class="cart-item_price-symbol">₽</span></div><a class="cart-item_del" href="#">D</a>
+                  </div>
+                </div>
+                <div class="cart-item">
+                  <div class="cart-item_img"><img src="media/img-p/set.jpg" alt=""/></div>
+                  <div class="cart-item_info"><b class="cart-item_title">Сет «Ассорти»</b><span class="cart-item_params">1 240 г / 40 шт</span></div>
+                  <div class="cart-item_actions">
+                    <div class="spinner js-spinner">
+                      <button class="spinner_btn __dec" type="button">-</button>
+                      <input class="spinner_vp" type="text" value="1" disabled="disabled"/>
+                      <button class="spinner_btn __inc" type="button">+</button>
+                    </div>
+                    <div class="cart-item_price"><span class="cart-item_price-num">240 </span><span class="cart-item_price-symbol">₽</span></div><a class="cart-item_del" href="#">D</a>
+                  </div>
+                </div>
+                <div class="cart-item">
+                  <div class="cart-item_img"><img src="media/img-p/set.jpg" alt=""/></div>
+                  <div class="cart-item_info"><b class="cart-item_title">Сет «Ассорти»</b><span class="cart-item_params">1 240 г / 40 шт</span></div>
+                  <div class="cart-item_actions">
+                    <div class="spinner js-spinner">
+                      <button class="spinner_btn __dec" type="button">-</button>
+                      <input class="spinner_vp" type="text" value="1" disabled="disabled"/>
+                      <button class="spinner_btn __inc" type="button">+</button>
+                    </div>
+                    <div class="cart-item_price"><span class="cart-item_price-num">240 </span><span class="cart-item_price-symbol">₽</span></div><a class="cart-item_del" href="#">D</a>
+                  </div>
+                </div>
+              </div>
+              <div class="cart-section_actions"><a class="btn __ghost" href="#">Есть промокод?</a><a class="btn" href="cart_2.html">Продолжить</a></div>
+            </div>
+            <div class="cart-section __is-disabled">
+              <div class="cart-section_header">
+                <div class="cart-section_label">02.</div><b class="cart-section_title">Данные получателя</b><span class="cart-section_subtitle">Укажите контактную информацию для получения заказа</span>
+              </div>
+              <div class="cart-section_content">
+                <form class="form" action="#" method="post">
+                  <fieldset class="form_fieldset">
+                    <legend class="form_fieldset-title">Контактная информация</legend>
+                    <div class="form_field-wrapper">
+                      <input class="form_text-field" type="text" name="name" placeholder="Имя"/>
+                    </div>
+                    <div class="form_field-wrapper">
+                      <input class="form_text-field" type="tel" name="tel" placeholder="Номер телефона"/>
+                    </div>
+                  </fieldset>
+                  <fieldset class="form_fieldset">
+                    <legend class="form_fieldset-title">Доставка</legend>
+                    <div class="form_field-wrapper">
+                      <input class="form_text-field" type="text" name="street" placeholder="Улица"/>
+                    </div>
+                    <div class="form_field-wrapper __2-fields">
+                      <input class="form_text-field" type="text" name="house" placeholder="Дом"/>
+                      <input class="form_text-field" type="text" name="flat" placeholder="Квартира"/>
+                    </div>
+                  </fieldset>
+                  <fieldset class="form_fieldset">
+                    <legend class="form_fieldset-title">Оплата</legend>
+                    <div class="form_radio-wrapper">
+                      <input class="form_radio" type="radio" name="payment" value="offline" id="offline-payment" checked="checked"/>
+                      <label class="form_radio-label" for="offline-payment">Наличными курьеру</label>
+                    </div>
+                    <div class="form_radio-wrapper">
+                      <input class="form_radio" type="radio" name="payment" value="online" id="online-payment"/>
+                      <label class="form_radio-label" for="online-payment">Оплата на сайте</label>
+                    </div>
+                  </fieldset>
+                </form>
+              </div>
+              <div class="cart-section_actions"><a class="btn __ghost" href="cart_1.html">Назад</a><a class="btn" href="cart_3.html">Оформить заказ</a></div>
+            </div>
+            <div class="cart-section __is-disabled">
+              <div class="cart-section_header">
+                <div class="cart-section_label">03.</div><b class="cart-section_title">Заказ оформлен</b><span class="cart-section_subtitle">После выполнения всех пунктов, мы получим ваш заказ и начнем его приготовление</span>
+              </div>
+              <div class="cart-section_content __text-content"><b>Ваш заказ №1234 оформлен</b>
+                <p>Спасибо за заказ. </p>
+                <p>В ближайшее время с вами свяжется наш оператор для подтверждения. <br>Прямо сейчас наши повара получили ваш заказ. </p>
+                <p>Желаем приятного аппетита!</p>
+              </div>
+              <div class="cart-section_actions"><a class="btn" href="catalog.html">Вернуться к покупкам</a></div>
+            </div>
+          </div>
+          <div class="cart_aside">
+            <div class="checkout"><b class="checkout_title">Детали заказа</b>
+              <ul class="checkout_totals">
+                <li class="checkout_totals-item"><span class="checkout_totals-name">Товары (4)</span><span class="checkout_totals-val">2 639 ₽</span></li>
+                <li class="checkout_totals-item"><span class="checkout_totals-name">Скидка</span><span class="checkout_totals-val">125 ₽</span></li>
+                <li class="checkout_totals-item"><span class="checkout_totals-name">Итоговая сумма</span><span class="checkout_totals-val">2 514 ₽</span></li>
+                <li class="checkout_totals-item"><span class="checkout_totals-name">Доставка</span><span class="checkout_totals-val">бесплатно</span></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer class="site-foo">
+      <div class="l-wrapper site-foo_first">
+        <div class="site-foo_about">
+          <div class="site-foo_logo"></div>
+          <p class="site-foo_about-txt">
+            Соломон — ресторан доставки японской 
+            кухни в Березниках. Качество выше цены. 
+            Только большие роллы по доступной цене. 
+            Кешбэк 10% при любом заказе.
+            
+          </p>
+        </div>
+        <nav class="site-foo_nav">
+          <ul class="site-foo_nav-list">
+            <li class="site-foo_nav-title">Меню</li>
+            <li class="site-foo_nav-item"><a class="site-foo_nav-link" href="#">Большие роллы</a></li>
+            <li class="site-foo_nav-item"><a class="site-foo_nav-link" href="#">Сеты</a></li>
+            <li class="site-foo_nav-item"><a class="site-foo_nav-link" href="#">Запеченные роллы</a></li>
+            <li class="site-foo_nav-item"><a class="site-foo_nav-link" href="#">Пицца и тортилья</a></li>
+            <li class="site-foo_nav-item"><a class="site-foo_nav-link" href="#">Суши и сашими</a></li>
+            <li class="site-foo_nav-item"><a class="site-foo_nav-link" href="#">Салаты и супы</a></li>
+            <li class="site-foo_nav-item"><a class="site-foo_nav-link" href="#">Горячие блюда</a></li>
+            <li class="site-foo_nav-item"><a class="site-foo_nav-link" href="#">Десерты и напитки</a></li>
+          </ul>
+          <ul class="site-foo_nav-list">
+            <li class="site-foo_nav-title">Компания</li>
+            <li class="site-foo_nav-item"><a class="site-foo_nav-link" href="#">Доставка</a></li>
+            <li class="site-foo_nav-item"><a class="site-foo_nav-link" href="#">Акции</a></li>
+            <li class="site-foo_nav-item"><a class="site-foo_nav-link" href="#">Кешбэк</a></li>
+            <li class="site-foo_nav-item"><a class="site-foo_nav-link" href="#">Оплата</a></li>
+            <li class="site-foo_nav-item"><a class="site-foo_nav-link" href="#">Контакты</a></li>
+            <li class="site-foo_nav-item"><a class="site-foo_nav-link" href="#">О компании</a></li>
+          </ul>
+          <ul class="site-foo_nav-list">
+            <li class="site-foo_nav-title">Личный кабинет</li>
+            <li class="site-foo_nav-item"><a class="site-foo_nav-link" href="#">Изменение пароля</a></li>
+            <li class="site-foo_nav-item"><a class="site-foo_nav-link" href="#">История заказов</a></li>
+            <li class="site-foo_nav-item"><a class="site-foo_nav-link" href="#">Регистрация</a></li>
+            <li class="site-foo_nav-item"><a class="site-foo_nav-link" href="#">Корзина</a></li>
+          </ul>
+        </nav>
+        <ul class="site-foo_info">
+          <li class="site-foo_info-item">
+            <div class="site-foo_info-item-ic">
+                <svg class="icon icon-map-marker-alt ">
+                  <use xlink:href="media/img/sprite.svg#map-marker-alt"></use>
+                </svg>
+            </div><span>г. Березники, ул. Свободы 40. <br>Корпус №3, офис 9</span>
+          </li>
+          <li class="site-foo_info-item">
+            <div class="site-foo_info-item-ic">
+                <svg class="icon icon-phone ">
+                  <use xlink:href="media/img/sprite.svg#phone"></use>
+                </svg>
+            </div><a href="#">+7 (3424) 200-555</a>
+          </li>
+          <li class="site-foo_info-item">
+            <div class="site-foo_info-item-ic">
+                <svg class="icon icon-at ">
+                  <use xlink:href="media/img/sprite.svg#at"></use>
+                </svg>
+            </div><a href="#">info@solomon.ru</a>
+          </li>
+          <li class="site-foo_info-item">
+            <div class="site-foo_info-item-ic">
+                <svg class="icon icon-clock ">
+                  <use xlink:href="media/img/sprite.svg#clock"></use>
+                </svg>
+            </div>
+            <ul class="site-foo_info-timetable">
+              <li>Вс - Чт: 09:30 – 23:00</li>
+              <li>Пт - Сб: 10:00 – 24:00</li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+      <div class="l-wrapper site-foo_second">
+        <div class="site-foo_copyright">Соломон200555 © 2018.</div>
+        <div class="site-foo_site-developer">Разработка сайта <a href="#">prostor.design</a></div>
+      </div>
+    </footer>
+    <div class="modal">
+      <div class="modal_container" id="sign-in">
+        <div class="modal_content">
+          <h2 class="modal_title like-h2">Авторизация</h2>
+          <p class="modal_text">
+            Введите номер и мы отправим вам код для входа в личный кабинет. 
+            Это позволит быстрее оформлять заказы и просматривать их 
+            историю.
+            
+          </p>
+          <form class="form __no-pdg" action="#" method="post">
+            <div class="form_field-wrapper">
+              <input class="form_text-field" type="tel" name="tel" id="order-call-tel" placeholder="Телефон"/>
+            </div>
+            <div class="form_field-wrapper">
+              <input class="form_text-field" type="text" name="pass" id="order-call-pass" placeholder="Код из SMS"/>
+            </div>
+            <div class="form_actions __align-center">
+              <button class="btn" type="submit">Вход</button>
+            </div>
+          </form>
+        </div><a class="modal_close" href="#"></a>
+      </div>
+      <div class="modal_overlay"></div>
+    </div>
+    <script src="js/libs/modal.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
